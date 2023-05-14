@@ -1,0 +1,207 @@
+/* CSS RESET  */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Navigation bar  */
+ #navbar{
+     display: flex;
+     align-items: center;
+     position: relative;
+ }
+#navbar::before{
+    content: "";
+    background-color:black ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+/* navigation logo and image styling */
+#logo{
+    
+    margin: 0px 20px;
+}
+#logo img{
+    height: 70px;
+    margin: 10px 10px;
+}
+
+
+/* navigation bar list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+      
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+      padding: 5px 10px ; 
+      border-radius: 10px;
+      color: white;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+/* home section styling */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../bgnew.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+
+#home h1{
+    color: white;
+    text-align: ceter;
+}
+#home p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: ceter;
+}
+/* services section  */
+
+#services{
+    margin: 30px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 5px 5px;
+    border-radius: 20px;
+    background-color:rgb(200, 198, 198);
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    padding: 5x;
+}
+
+/* client section  */
+
+#client-section{
+     height: 400px;
+     position: relative;
+}
+
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../saled.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#clients{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+
+}
+
+#clients img{
+    height: 120px;
+}
+.client-item{
+    padding: 50px;
+}
+
+/* contact  us section  */
+
+#final-box{
+    position: relative;
+}
+
+
+
+#final-box::before{
+    content: "";
+    position: absolute;
+    background: url('../contact.png') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#form-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+#form-section input{
+    width: 500px;
+    height: 25px;
+    border-radius: 7px;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+
+/* utility classes to style content inside the section  */
+.h-primery{
+    font-size: 2.8rem;
+    padding: 12px;
+    
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    /* color: white; */
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(188, 136, 99);
+    border-radius: 10px;
+    color: rgb(238, 237, 237);
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: rgb(134, 56, 1);
+    
+}
+
+.center{
+    text-align: center;
+}

@@ -1,0 +1,101 @@
+/* navigation bar  */
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0px 5px;
+    border-radius: 10px;
+    color: white;
+}
+/* logo height  */
+#logo img{
+    height: 50px;
+    margin:5px;
+}
+
+/* home section  */ 
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: 210px;
+}
+#home::before{
+    height: 350px;
+}
+
+#home p{
+    color: white;
+    font-size: 15px;
+    text-align: ceter;
+}
+ /* services - section  */
+ #services {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* clients-section  */
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#clients img {
+    height: 78px;
+}
+/* #form - section  */
+#form-section input {
+    width: 250px;
+    height: 20px;
+    border-radius: 7px;
+    text-align: center;
+}
+ /* final footer - box  */
+
+ #final-box {
+    position: relative;
+    margin-bottom: 10px;
+}
+/* utility classes  */
+.h-primery{
+    font-size: 1.5rem;
+    padding: 12px;
+    
+}
+
+.h-secondary{
+    font-size: 1rem;
+    padding: 12px;
+    /* color: white; */
+}
+
+.btn{
+    /* padding: 6px 20px; */
+    border: 2px solid white;
+    background-color: rgb(188, 136, 99);
+    border-radius: 10px;
+    color: rgb(238, 237, 237);
+    /* margin: 17px; */
+    font-size: 10px;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color: rgb(134, 56, 1);
+    
+}
+
+.center{
+    text-align: center;
+}
